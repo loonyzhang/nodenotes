@@ -1,0 +1,10 @@
+{
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.eol": "\n",
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "all"
+}

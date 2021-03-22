@@ -1,0 +1,36 @@
+{
+  "name": "nodenotes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-ts": "gulp",
+    "watch-js": "nodemon -w dist dist/app.js",
+    "dev": "concurrently \"npm run watch-ts\" \"npm run watch-js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.9.4",
+    "koa": "^2.13.1",
+    "mysql2": "^2.2.5",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.31",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.1",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "concurrently": "^6.0.0",
+    "eslint": "^7.22.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "gulp": "^4.0.2",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.2.3"
+  }
+}
