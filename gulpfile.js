@@ -7,12 +7,15 @@ async function buildTs () {
   return esbuild.build({
     entryPoints: tsFiles,
     platform: 'node',
+    target: 'node12',
     format: 'cjs',
     outdir: './dist',
-    logLevel: 'info'
+    logLevel: 'info',
+    charset: 'utf8'
   })
 }
 
 exports.default = function () {
   watch('./src/**/*.ts', buildTs)
 }
+exports.build = buildTs

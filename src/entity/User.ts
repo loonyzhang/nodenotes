@@ -1,6 +1,6 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
 
-@Entity()
+@Entity('users')
 export class User {
   @PrimaryGeneratedColumn()
   id!: number;
@@ -26,6 +26,6 @@ export class User {
   @Column('varchar')
   group!: string;
 
-  @Column('int')
+  @Column('varchar')
   authCode!: number;
 }

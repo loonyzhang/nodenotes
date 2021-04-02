@@ -5,22 +5,31 @@
   "main": "index.js",
   "scripts": {
     "watch-ts": "gulp",
-    "watch-js": "nodemon -w dist dist/app.js",
-    "dev": "concurrently \"npm run watch-ts\" \"npm run watch-js\""
+    "watch-js": "nodemon -w dist --delay 1 dist/app.js",
+    "dev": "gulp build && concurrently \"npm run watch-ts\" \"npm run watch-js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@koa/router": "^10.0.0",
     "esbuild": "^0.9.4",
     "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-json-error": "^3.1.2",
+    "koa-unless": "^1.0.7",
     "mysql2": "^2.2.5",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.31",
+    "uuid": "^8.3.2",
     "winston": "^3.3.3"
   },
   "devDependencies": {
     "@types/koa": "^2.13.1",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-json-error": "^3.1.2",
+    "@types/koa__router": "^8.0.4",
+    "@types/uuid": "^8.3.0",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",
     "concurrently": "^6.0.0",
