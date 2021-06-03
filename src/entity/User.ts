@@ -27,5 +27,5 @@ export class User {
   group!: string;
 
   @Column('varchar')
-  authCode!: number;
+  authCode!: string;
 }

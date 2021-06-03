@@ -14,7 +14,7 @@ createConnection({
   port: 3306,
   username: 'root',
   password: 'root',
-  database: 'nodedb',
+  database: 'nodenotes',
   entities: [resolve(__dirname, './entity/*.js')],
   synchronize: false,
   logging: false
